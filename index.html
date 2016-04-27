@@ -37,14 +37,17 @@
                     $(".checkSubmit").html("<i class='fa fa-frown-o red' aria-hidden='true' ></i> Ci servono le informazioni richieste per poter gestire la tua richiesta");
                     $(".checkSubmit").fadeIn(500);
                 }
-                else if ($("#emailField").val().indexOf("@") >= 0) {
+                else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($("#emailField").val())) {
                     $(".checkSubmit").html("<i class='fa fa-check green' aria-hidden='true' ></i> Messaggio inviato correttamente!");
                     $(".checkSubmit").fadeIn(500);
+                    return (true);
                 }
                 else {
                     $(".checkSubmit").html("<i class='fa fa-frown-o red' aria-hidden='true' ></i> Sicuro di aver scritto correttamente la mail? Utilizza il formato example@dominio.it");
                     $(".checkSubmit").fadeIn(500);
+                    return (false);
                 }
+               
             });
         });
     </script>

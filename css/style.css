@@ -70,12 +70,14 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
         border: double 4px white;
-        background-color: rgba(0,0,0,0.1);
+        background-color: rgba(0,0,0,0.5);
         outline: none !important;
+        opacity:0.9;
     }
 
         .rowButtons button:hover {
             outline: none !important;
+            opacity:1;
         }
 
 .rowProduct {
@@ -95,13 +97,13 @@ body {
     background:#ffe65a;
 }
 
-#prodotto:hover {
+#prodotto {
     -webkit-transition: all 0.3s ease-in-out;
     background: #fff;
     border-color: transparent;
 }
 
-#categorie:hover {
+#categorie {
     -webkit-transition: all 0.3s ease-in-out;
     background: rgba(0,0,0,0.8);
     color:white;
@@ -109,7 +111,7 @@ body {
     border-color: transparent;
 }
 
-#contattaci:hover {
+#contattaci {
     -webkit-transition: all 0.3s ease-in-out;
     background: #ffe65a;
     border-color: transparent;
@@ -256,6 +258,10 @@ textarea {
     padding:10px;
     font-size: 20pt;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+input, textarea {
+    box-shadow:inset 0 0 5px 5px #f7f7f7;
 }
 
 .checkSubmit {
