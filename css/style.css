@@ -1,25 +1,81 @@
 ﻿
 body {
     font-family: 'Opens Sans Condensed', sans-serif;
-    color: black;
     overflow-x: hidden;
     margin:0;
     padding:0;
-}
-
-.rowHome {
     background:url("../img/pattern.svg");
     background-size:cover;
     background-repeat:no-repeat;
+}
+
+nav {
+    text-align:right;
+    border-bottom:solid 1px white;
+    
+}
+
+    nav span {
+        -webkit-transition: all 0.3s ease-in-out;
+        color:white;
+        font-family:Ubuntu;
+        padding-right:3%;
+        cursor:pointer;
+        background:transparent;
+        height:50px;
+        line-height:60px;
+        letter-spacing:1px;
+        text-align:right;
+    }
+
+        nav span:hover {
+            -webkit-transition: all 0.3s ease-in-out;
+            text-decoration:underline;
+        }
+
+
+.rowHome {
     height:100vh;
     color:white;
+    display:block;
+}
+
+.rowIntro {
+    background:rgb(255, 255, 255);
+    color:black;
+}
+
+.carousel-indicators li {
+    width:15px;
 }
 
 .title {
-    font-size:50pt;
+    font-size:50px;
     font-family:Jura;
     text-align:center;
-    padding-top:20%;   
+    padding-top:20%;
+    text-rendering: optimizelegibility;
+}
+
+.carousel-indicators {
+    top:30%;
+}
+
+.carousel-indicators .actived {
+    background:white;
+}
+
+.circle {
+    width:30px;
+    height:30px;
+    text-align:center;
+    font-weight:bold;
+    color:white;
+    background:#2c2c2c;
+    line-height:30px;
+    border-radius:80px;
+    cursor:pointer;
+    margin-left:1%;
 }
 
 .hrSmall {
@@ -44,11 +100,32 @@ strong {
     letter-spacing:1px;
 }
 
-#workInProgress {
+.titleMediumSize {
     text-align:center;
-    font-size:40pt;
-    font-family:Share Tech Mono;
-    position:absolute;
-    bottom:0;
+    font-family:Lato;
+    font-size:30pt;
 }
+
+    .titleMediumSize span {
+        font-weight:bold;
+        color:#d32525;
+    }
+
+.divIcons {
+    width:100%;
+}
+
+.iconIntro {
+    text-align:center;
+}
+
+.rowIntro {
+
+}
+
+.rowIntro i {
+    font-size:50pt;
+    padding-top:2%;
+}
+
 
