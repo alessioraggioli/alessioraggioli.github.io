@@ -2,130 +2,180 @@
 body {
     font-family: 'Opens Sans Condensed', sans-serif;
     overflow-x: hidden;
-    margin:0;
-    padding:0;
-    background:url("../img/pattern.svg");
-    background-size:cover;
-    background-repeat:no-repeat;
+    margin: 0;
+    padding: 0;
+    background: url("../img/pattern.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav {
-    text-align:right;
-    border-bottom:solid 1px white;
-    
+    text-align: right;
+    border-bottom: solid 1px white;
 }
 
     nav span {
         -webkit-transition: all 0.3s ease-in-out;
-        color:white;
-        font-family:Ubuntu;
-        padding-right:3%;
-        cursor:pointer;
-        background:transparent;
-        height:50px;
-        line-height:60px;
-        letter-spacing:1px;
-        text-align:right;
+        color: white;
+        font-family: Ubuntu;
+        padding-right: 3%;
+        cursor: pointer;
+        background: transparent;
+        height: 50px;
+        line-height: 60px;
+        letter-spacing: 1px;
+        text-align: right;
     }
 
         nav span:hover {
             -webkit-transition: all 0.3s ease-in-out;
-            text-decoration:underline;
+            text-decoration: underline;
         }
 
 
 .rowHome {
-    height:100vh;
-    color:white;
-    display:block;
+    height: 100vh;
+    color: white;
+    display: block;
 }
 
 .rowIntro {
-    background:rgb(255, 255, 255);
-    color:black;
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.rowContacts {
+    background: url("../img/patternGrey.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f9f4f4;
+    
 }
 
 .carousel-indicators li {
-    width:15px;
-}
-
-.title {
-    font-size:50px;
-    font-family:Jura;
-    text-align:center;
-    padding-top:20%;
-    text-rendering: optimizelegibility;
-}
-
-.carousel-indicators {
-    top:30%;
+    width: 15px;
 }
 
 .carousel-indicators .actived {
-    background:white;
+    background: white;
+}
+
+.carousel-indicators {
+    top: 5px;
+}
+
+.title {
+    font-size: 50px;
+    font-family: Jura;
+    text-align: center;
+    padding-top: 20%;
+    text-rendering: optimizelegibility;
 }
 
 .circle {
-    width:30px;
-    height:30px;
-    text-align:center;
-    font-weight:bold;
-    color:white;
-    background:#2c2c2c;
-    line-height:30px;
-    border-radius:80px;
-    cursor:pointer;
-    margin-left:1%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: #2c2c2c;
+    line-height: 30px;
+    border-radius: 80px;
+    cursor: pointer;
+    margin-left: 1%;
 }
 
 .hrSmall {
-    width:5%;
+    width: 5%;
 }
 
 strong {
-    color:#2c2c2c;
+    color: #2c2c2c;
 }
 
-.centered{
+.centered {
     float: none;
     margin: 0 auto;
 }
 
 .underTitle {
-    margin-top:0;
-    font-size:15pt;
-    text-align:center;
-    font-family: Dosis;/*Lato*/
-    font-weight:lighter;
-    letter-spacing:1px;
+    margin-top: 0;
+    font-size: 15pt;
+    text-align: center;
+    font-family: Dosis; /*Lato*/
+    font-weight: lighter;
+    letter-spacing: 1px;
 }
 
 .titleMediumSize {
-    text-align:center;
-    font-family:Lato;
-    font-size:30pt;
+    text-align: center;
+    font-family: Lato;
+    font-size: 30pt;
 }
 
-    .titleMediumSize span {
-        font-weight:bold;
-        color:#d32525;
-    }
+.titleSmallSize {
+    text-align: center;
+    font-family: Open Sans Condensed;
+    font-size: 25pt;
+}
 
-.divIcons {
+.titleMediumSize span {
+    font-weight: bold;
+    color: #d32525;
+}
+
+.articlePassions {
+    text-align: center;
+    font-family: Abel;
+    font-size: 15pt;
+}
+
+.small-centered {
+    text-align: center;
+    font-size: 13pt;
+    font-family: Open Sans Condensed;
+}
+
+.iMail {
+    font-size: 40pt;
+    text-align: center;
+    color:#d32525;
+}
+
+.sMail {
+    font-size: 30pt;
+    text-align: center;
+    font-family: Open Sans Condensed;
+    color: #f6eeee;
+}
+
+.copy {
+    background:#f9f4f4;
+    color:#2c2c2c;
+    margin-bottom:3%;
+}
+
+#divFiber {
     width:100%;
+    height:200px;
+    background: url("../img/fiber.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.iconIntro {
-    text-align:center;
+#divF1 {
+    width:100%;
+    height:200px;
+    background: url("../img/f1line.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.rowIntro {
-
+#divStore {
+    width:100%;
+    height:200px;
+    background: url("../img/store.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.rowIntro i {
-    font-size:50pt;
-    padding-top:2%;
-}
-
 

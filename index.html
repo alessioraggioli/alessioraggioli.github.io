@@ -17,11 +17,14 @@ xmlns="http://www.w3.org/1999/xhtml">
     <link href="css/hover.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    
+    <script src="packages/node_modules/clipboard/dist/clipboard.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Abel|Dosis|Lato|Marvel|Share Tech Mono|Antic|Jura|Carme|Open+Sans+Condensed:300|Ubuntu|Roboto"
         rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <script>
+
 
         $(function () {
             $('a[href*="#"]:not([href="#"])').click(function () {
@@ -48,22 +51,27 @@ xmlns="http://www.w3.org/1999/xhtml">
             });
 
             $("#l1").click(function () {
+                $("body").css("-webkit-transition", "all 0.5s ease-in-out");
                 $("body").stop().css("background-image", "url('../img/pattern.svg')");
             
           
             });
 
             $("#l2").click(function () {
+                $("body").css("-webkit-transition", "all 0.5s ease-in-out");
                 $("body").stop().css("background-image", "url('../img/patternOrange.svg')");
+               // $("body").slideDown(1000);
 
             });
 
             $("#l3").click(function () {
+                $("body").css("webkit-transition", "all 0.5s ease-in-out");
                 $("body").stop().css("background-image", "url('../img/patternBlue.svg')");
 
             });
 
             $("#l4").click(function () {
+                $("body").css("webkit-transition", "all 0.5s ease-in-out");
                 $("body").stop().css("background-image", "url('../img/patternGreen.svg')");
 
             });
@@ -77,18 +85,17 @@ xmlns="http://www.w3.org/1999/xhtml">
             <nav>
                 <span style="color:#2d2d2d">WORK IN PROGRESS</span>
                 <span>TRANSLATE</span>
-            </nav>
-            <div class="container-fluid">
-                <div class="row">
+                
                     <ol class="carousel-indicators">
                         <li class="actived" id="l1"></li>
                         <li id="l2"></li>
                         <li id="l3"></li>
                         <li id="l4"></li>
                     </ol>
-                </div>
-            </div>
+               
 
+            </nav>
+           
             <h1 class="col-xs-12 title">Alessio
                 <strong>Raggioli</strong>
             </h1>
@@ -102,11 +109,111 @@ xmlns="http://www.w3.org/1999/xhtml">
     </div>
 
     <div class="row rowIntro">
-        <h3 class="col-xs-12 titleMediumSize"><span>//</span>
-            Passions</h3>
+        <h3 class="col-xs-12 titleMediumSize"><span>//</span> Passions</h3>
+        <span class="col-xs-4 col-lg-4 titleSmallSize">{ Racing }</span>
+        <span class="col-xs-4 col-lg-4 titleSmallSize">{ Coding }</span>
+        <span class="col-xs-4 col-lg-4 titleSmallSize">{ Writing }</span>
 
+        <article class="col-xs-12 col-lg-4 articlePassions">
+            La vita è correre, il resto è soltanto attesa.
+            La velocità è un qualcosa che mi stimola molto e nel tempo libero
+            c'è sempre tempo per un giro sui kart. 
+        </article>
+
+        <article class="col-xs-12 col-lg-4 articlePassions">
+            Mi sono appassionato all'informatica durante le superiori, particolarmente
+            nel settore della grafica e del web design. Amo lo stile minimalista
+            come lo si può vedere da questo sito e mi tengo costantemente in allenamento
+            realizzando progetti.
+        </article>
+
+        <article class="col-xs-12 col-lg-4 articlePassions">
+            La vita è un armonia di grida<br /> che danza con note dolenti sui battiti del tempo.
+
+        </article>
 
     </div>
+
+     <div class="row rowIntro">
+        <h3 class="col-xs-12 titleMediumSize"><span>//</span> Projects</h3>
+        <span class="col-xs-4 col-lg-4 titleSmallSize">{ Fiber }</span>
+        <span class="col-xs-4 col-lg-4 titleSmallSize">{ F1 Line }</span>
+        <span class="col-xs-4 col-lg-4 titleSmallSize">{ Nebula Store }</span>
+
+        <article class="col-xs-12 col-lg-4 articlePassions">
+            Progetto realizzato per l'Istituto Tecnico Superiore Kennedy di Pordenone
+            su un prototipo di scatola di cereali, io mi sono occupato di realizzare il prototipo 
+            della pagina web del prodotto.
+            <div id="divFiber">
+
+            </div>
+        </article>
+
+        <article class="col-xs-12 col-lg-4 articlePassions">
+            Probabilmente il progetto più grande che io abbia mai fatto. Cominciato nell'estate del 2014 partendo da 
+            un blocco note, sino ad arrivare ad un sito web con una modesta comunità di giocatori appassionati
+            di Formula 1. Io e il mio socio ora gestiamo uno dei migliori tornei online per PC riguardante 
+            i capitoli del gioco F1 by Codemaster. Il sito non è attualmente responsivo, ma verrà 
+            presto aggiornato.
+            <div id="divF1">
+
+            </div>
+        </article>
+
+        <article class="col-xs-12 col-lg-4 articlePassions">
+            Questo progetto, sempre realizzato per conto dell'ITS Kennedy di Pordenone, prevedeva 
+            di mostrare la lista negozi ed il relativo dettaglio della società Jesse. Io ho curato la parte 
+            front-end del progetto.
+            <div id="divStore">
+
+            </div>
+        </article>
+
+    </div>
+
+    <div class="row rowIntro" style="margin-bottom:2%">
+        <h3 class="col-xs-12 titleMediumSize"><span>//</span> Knowledge</h3>
+        <span class="col-xs-4 col-lg-2 titleSmallSize">{ Html5 }</span>
+        <span class="col-xs-4 col-lg-2 titleSmallSize">{ Css3 }</span>
+        <span class="col-xs-4 col-lg-2 titleSmallSize">{ jQuery }</span>
+        <span class="col-xs-4 col-lg-2 titleSmallSize">{ AngularJs }</span>
+        <span class="col-xs-4 col-lg-2 titleSmallSize">{ MySql }</span>
+        <span class="col-xs-4 col-lg-2 titleSmallSize">{ Frameworks }</span>
+    </div>
+
+    <div class="row rowContacts">
+        <h3 class="col-xs-12 titleMediumSize"><span>//</span> Contact me</h3>
+        <span class="col-xs-12 small-centered">Sfortunatamente non è possibile creare form funzionanti con github pages, 
+            clicca il tasto sottostante per copiare la mia mail e contattarmi! Grazie.</span>
+        <div class="col-xs-12 iMail">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i><br />
+            
+        </div>
+            
+            <button class="col-xs-12 col-lg-2 col-lg-offset-5 btn btn-default copy" data-clipboard-text="alessiorgg@gmail.com">Copia nella clipboard</button> 
+        </div>
+         
+           
+    </div>
+
+    <script>
+        var clipboard = new Clipboard('.copy');
+
+        clipboard.on('success', function (e) {
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+            $(".copy").css("background-color", "#5cb85c");
+            $(".copy").css("font-weight", "bold");
+            $(".copy").html("Copiato <i class='fa fa-check' aria-hidden='true'></i>");
+            e.clearSelection();
+        });
+
+        clipboard.on('error', function (e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+        });
+    </script>
 
 </body>
 </html>
