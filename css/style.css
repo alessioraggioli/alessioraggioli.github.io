@@ -14,23 +14,41 @@ nav {
     border-bottom: solid 1px white;
 }
 
-    nav span {
-        -webkit-transition: all 0.3s ease-in-out;
-        color: white;
-        font-family: Ubuntu;
-        padding-right: 3%;
-        cursor: pointer;
-        background: transparent;
-        height: 50px;
-        line-height: 60px;
-        letter-spacing: 1px;
-        text-align: right;
+.centered {
+    text-align: center;
+}
+
+a, a:hover {
+    text-decoration: underline;
+    color: #166fc9;
+}
+
+    a:active, a:visited, a:focus {
+        text-decoration:none;
     }
 
-        nav span:hover {
-            -webkit-transition: all 0.3s ease-in-out;
-            text-decoration: underline;
-        }
+#aContact, #aContact:hover, #aContact:visited, #aContact:active, #aContact:focus {
+    text-decoration: none;
+    color: white;
+}
+
+nav span {
+    -webkit-transition: all 0.3s ease-in-out;
+    color: white;
+    font-family: Ubuntu;
+    padding-right: 3%;
+    cursor: pointer;
+    background: transparent;
+    height: 50px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+    nav span:hover {
+        -webkit-transition: all 0.3s ease-in-out;
+        text-decoration: underline;
+    }
 
 
 .rowHome {
@@ -40,8 +58,11 @@ nav {
 }
 
 .rowIntro {
+    padding-top: 50px;
     background: rgb(255, 255, 255);
     color: black;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .rowContacts {
@@ -49,8 +70,15 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     color: #f9f4f4;
-    
+    padding-top: 20px;
 }
+
+.arrowDown {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    color: black;
+}
+
 
 .carousel-indicators li {
     width: 15px;
@@ -87,6 +115,11 @@ nav {
 
 .hrSmall {
     width: 5%;
+}
+
+.hrMedium {
+    border-bottom: solid 1px black;
+    width: 50%;
 }
 
 strong {
@@ -139,7 +172,7 @@ strong {
 .iMail {
     font-size: 40pt;
     text-align: center;
-    color:#d32525;
+    color: #d32525;
 }
 
 .sMail {
@@ -150,32 +183,73 @@ strong {
 }
 
 .copy {
-    background:#f9f4f4;
-    color:#2c2c2c;
-    margin-bottom:3%;
+    background: #f9f4f4;
+    color: #2c2c2c;
+    margin-bottom: 3%;
 }
 
 #divFiber {
-    width:100%;
-    height:200px;
+    width: 100%;
+    height: 200px;
     background: url("../img/fiber.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #divF1 {
-    width:100%;
-    height:200px;
+    width: 100%;
+    height: 200px;
     background: url("../img/f1line.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #divStore {
-    width:100%;
-    height:200px;
+    width: 100%;
+    height: 200px;
     background: url("../img/store.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.imgSmall {
+    width: 70px;
+    height: 70px;
+    margin-left: 11%;
+}
+
+#html {
+    background: url("../img/html5.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#css {
+    background: url("../img/css3.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#boot {
+    background: url("../img/bootstrap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#jquery {
+    background: url("../img/jquery.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#angular {
+    background: url("../img/angular.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mysql {
+    background: url("../img/mysql.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
