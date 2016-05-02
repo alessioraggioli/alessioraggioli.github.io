@@ -24,7 +24,7 @@ a, a:hover {
 }
 
     a:active, a:visited, a:focus {
-        text-decoration:none;
+        text-decoration: none;
     }
 
 #aContact, #aContact:hover, #aContact:visited, #aContact:active, #aContact:focus {
@@ -115,11 +115,16 @@ nav span {
 
 .hrSmall {
     width: 5%;
+    border-bottom: solid 1px white;
 }
 
 .hrMedium {
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px #2c2c2c;
     width: 50%;
+}
+
+hr {
+    border-bottom: solid 1px #2c2c2c;
 }
 
 strong {
@@ -158,7 +163,7 @@ strong {
 }
 
 .articlePassions {
-    text-align: center;
+    text-align: justify;
     font-family: Abel;
     font-size: 15pt;
 }
