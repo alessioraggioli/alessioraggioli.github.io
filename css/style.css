@@ -61,8 +61,8 @@ nav span {
     padding-top: 50px;
     background: rgb(255, 255, 255);
     color: black;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left:20px;
+    padding-right:20px;
 }
 
 .rowContacts {
@@ -147,14 +147,16 @@ strong {
 
 .titleMediumSize {
     text-align: center;
-    font-family: Lato;
-    font-size: 30pt;
+    font-family: Jura;
+    font-size: 20pt;
+    letter-spacing:0px;
 }
 
 .titleSmallSize {
     text-align: center;
-    font-family: Open Sans Condensed;
+    font-family: Share Tech Mono;
     font-size: 25pt;
+    border-bottom:solid 1px black;
 }
 
 .titleMediumSize span {
@@ -162,10 +164,16 @@ strong {
     color: #d32525;
 }
 
+.imgIcons {
+    width:60px;
+    height:55px;
+}
+
 .articlePassions {
     text-align: justify;
     font-family: Abel;
     font-size: 15pt;
+    max-height:300px;
 }
 
 .small-centered {
@@ -193,28 +201,11 @@ strong {
     margin-bottom: 3%;
 }
 
-#divFiber {
-    width: 100%;
-    height: 200px;
-    background: url("../img/fiber.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#divF1 {
-    width: 100%;
-    height: 200px;
-    background: url("../img/f1line.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#divStore {
-    width: 100%;
-    height: 200px;
-    background: url("../img/store.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+.previewPj {
+    min-width:150px;
+    min-height:120px;
+    width:500px;
+    height:250px;
 }
 
 .imgSmall {
@@ -257,4 +248,13 @@ strong {
     background: url("../img/mysql.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  body * {
+    font-size:14pt !important;
+  }
+    nav span {
+        display:none;
+    }
 }
