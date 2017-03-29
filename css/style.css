@@ -1,10 +1,10 @@
 ﻿
 body {
-    font-family: 'Opens Sans Condensed', sans-serif;
+    font-family: Assistant;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background: url("../img/pattern.svg");
+    background: url("../img/patternOrange.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -36,13 +36,13 @@ nav span {
     -webkit-transition: all 0.3s ease-in-out;
     color: white;
     font-family: Montserrat;
-    padding-right: 3%;
+    /*padding-right: 3%;*/
     cursor: pointer;
     background: transparent;
     height: 50px;
     line-height: 60px;
     letter-spacing: 1px;
-    text-align: right;
+    /*text-align: right;*/
 }
 
     nav span:hover {
@@ -71,6 +71,7 @@ nav span {
     background-repeat: no-repeat;
     color: #f9f4f4;
     padding-top: 20px;
+    font-family:Assistant;
 }
 
 .arrowDown {
@@ -171,15 +172,15 @@ strong {
 
 .articlePassions {
     text-align: justify;
-    font-family: Montserrat;
+    font-family: Assistant;
     font-size: 12pt;
     max-height: 325px;
 }
 
 .small-centered {
     text-align: center;
-    font-size: 13pt;
-    font-family: Open Sans Condensed;
+    font-size: 14pt;
+    font-family: Assistant;
 }
 
 .iMail {
