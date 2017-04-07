@@ -4,15 +4,14 @@
     margin: 0;
     padding: 0;
     background:#222;
-    /*background: url("../img/pattern.svg");*/
+    background: url("../img/pattern.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 nav {
-    text-align: right;
-    border-bottom: solid 1px white;
-    
+    border-bottom: solid 1px #ff6a00;
+    background-color:transparent;
 }
 
 .centered {
@@ -21,7 +20,6 @@ nav {
 
 a, a:hover {
     text-decoration: underline;
-    color: #166fc9;
 }
 
     a:active, a:visited, a:focus {
@@ -30,25 +28,26 @@ a, a:hover {
 
 #aContact, #aContact:hover, #aContact:visited, #aContact:active, #aContact:focus {
     text-decoration: none;
-    color: white;
+    
 }
 
-nav span {
+nav span a{
     -webkit-transition: all 0.3s ease-in-out;
-    color: white;
-    font-family: Montserrat;
+    color: #ff6a00;
+    font-family: Russo One;
     /*padding-right: 3%;*/
     cursor: pointer;
-    background: transparent;
-    height: 50px;
-    line-height: 60px;
+    height: 55px;
+    line-height: 55px;
     letter-spacing: 1px;
-    /*text-align: right;*/
+    padding:20px;
+    font-size:14pt;
 }
 
-    nav span:hover {
+    nav span a:hover {
         -webkit-transition: all 0.3s ease-in-out;
         text-decoration: underline;
+        color:#f9f4f4;
     }
 
 
@@ -56,6 +55,14 @@ nav span {
     height: 100vh;
     color: white;
     display: block;
+}
+
+.respawnInfo{
+    font-size:16pt;
+    color:white;
+}
+.respawnInfo i{
+    font-size:60pt;
 }
 
 .rowIntro {
@@ -71,8 +78,9 @@ nav span {
     background-size: cover;
     background-repeat: no-repeat;
     color: #f9f4f4;
-    padding-top: 20px;
+    padding: 20px;
     font-family:Assistant;
+    font-size:15pt;
 }
 
 .arrowDown {
@@ -163,7 +171,7 @@ strong {
 
 .titleMediumSize span {
     font-weight: bold;
-    color: #d32525;
+    color: #ff6a00;
 }
 
 .imgIcons {
