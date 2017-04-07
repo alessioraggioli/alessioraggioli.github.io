@@ -12,6 +12,7 @@
 nav {
     text-align: right;
     border-bottom: solid 1px white;
+    
 }
 
 .centered {
@@ -116,7 +117,7 @@ nav span {
 
 .hrSmall {
     width: 5%;
-    border-bottom: solid 1px white;
+    border-color:red;
 }
 
 .hrMedium {

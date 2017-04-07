@@ -18,7 +18,7 @@
     <link href="css/animate.css" rel="stylesheet" />
     <link href="css/phoenix.css" rel="stylesheet" />
     <script src="packages/node_modules/clipboard/dist/clipboard.min.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Dosis|Permanent+Marker|Montserrat|Jura|Assistant:300"
+    <link href="http://fonts.googleapis.com/css?family=Dosis|Permanent+Marker|Montserrat|Russo+One|Assistant:300"
           rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
@@ -41,7 +41,7 @@
         });
 
         $(function () {
-        
+
             $(".carousel-indicators li").click(function () {
                 $(".carousel-indicators li").css("background", "transparent");
                 $(this).css("background", "white");
@@ -55,20 +55,20 @@
     <div class="container-fluid">
 
         <div class="row rowHome">
-            <nav class="text-center">
-                
-                <span>
-                    <a href="#contatti" id="aContact">
+            <nav class="col-sm-12 text-center">
+
+                <span class="col-sm-2 col-sm-offset-3">
+                    <a href="#contatti" id="aContact" style="font-family:Russo One; color:#ff6a00">
                         HOME
                     </a>
                 </span>
-                <span>
-                    <a href="#contatti" id="aContact">
+                <span class="col-sm-2">
+                    <a href="#contatti" id="aContact" style="font-family:Russo One; color:#ff6a00">
                         INFO
                     </a>
                 </span>
-                <span>
-                    <a href="#contatti" id="aContact">
+                <span class="col-sm-2">
+                    <a href="#contatti" id="aContact" style="font-family:Russo One; color:#ff6a00">
                         CONTATTI
                     </a>
                 </span>
@@ -79,8 +79,12 @@
                     <li id="l4"></li>
                 </ol>-->
             </nav>
-            <img src="img/respawn_zone_black.png" class="col-xs-12 text-center" style="width:400px" />
-            <hr class="col-xs-12 hrSmall centered" />
+            <div class="col-xs-12 text-center">
+                <br /><br />
+                <img src="img/respawn_zone_black.png" style="width:500px" />
+            </div>
+            <br />
+            <hr/>
             <br />
             <h3 class="underTitle">
                 <img src="img/italia.png" />
@@ -202,54 +206,54 @@
                 </div>
 
             </article>
-            </div>
+        </div>
 
-            <div class="row rowIntro" style="padding-bottom: 20px;">
-                <article class="col-xs-12 col-lg-4 media articlePassions">
+        <div class="row rowIntro" style="padding-bottom: 20px;">
+            <article class="col-xs-12 col-lg-4 media articlePassions">
 
-                    <div class="media-left media-top">
-                        <img src="img/front.png" class="imgIcons" />
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading titleSmallSize">
-                            Front-End Skills
-                        </h4>
-                        ♦ HTML5 / CSS3 / LESS <br />
-                        ♦ Javascript / jQuery / Ajax / AngularJS / Handlebars.js
-                    </div>
+                <div class="media-left media-top">
+                    <img src="img/front.png" class="imgIcons" />
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading titleSmallSize">
+                        Front-End Skills
+                    </h4>
+                    ♦ HTML5 / CSS3 / LESS <br />
+                    ♦ Javascript / jQuery / Ajax / AngularJS / Handlebars.js
+                </div>
 
-                </article>
-                <article class="col-xs-12 col-lg-4 media articlePassions">
+            </article>
+            <article class="col-xs-12 col-lg-4 media articlePassions">
 
-                    <div class="media-left media-top">
-                        <img src="img/back.png" class="imgIcons" />
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading titleSmallSize">
-                            Back-end Skills
-                        </h4>
-                        ♦ ASP.NET / ASP.NET Core / Web API <br>
-                        ♦ ADO.NET / EntityFramework / LinQ / Dapper <br>
-                        ♦ C# / PHP <br>
-                        ♦ SQL SERVER 2012 / MySQL <br>
-                    </div>
+                <div class="media-left media-top">
+                    <img src="img/back.png" class="imgIcons" />
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading titleSmallSize">
+                        Back-end Skills
+                    </h4>
+                    ♦ ASP.NET / ASP.NET Core / Web API <br>
+                    ♦ ADO.NET / EntityFramework / LinQ / Dapper <br>
+                    ♦ C# / PHP <br>
+                    ♦ SQL SERVER 2012 / MySQL <br>
+                </div>
 
-                </article>
-                <article class="col-xs-12 col-lg-4 media articlePassions">
+            </article>
+            <article class="col-xs-12 col-lg-4 media articlePassions">
 
-                    <div class="media-left media-top">
-                        <img src="img/skill.png" class="imgIcons" />
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading titleSmallSize">
-                            Various Skills
-                        </h4>
-                        ♦ MS Sharepoint 2013 / MS Cognitive Services / MS Azure <br>
-                        ♦ Versioning Git / TFS <br />
-                        ♦ Teamwork
-                    </div>
+                <div class="media-left media-top">
+                    <img src="img/skill.png" class="imgIcons" />
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading titleSmallSize">
+                        Various Skills
+                    </h4>
+                    ♦ MS Sharepoint 2013 / MS Cognitive Services / MS Azure <br>
+                    ♦ Versioning Git / TFS <br />
+                    ♦ Teamwork
+                </div>
 
-                </article>
+            </article>
         </div>
 
     </div>
